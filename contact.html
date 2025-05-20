@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        body {
+            background-color: #FDC97D;
+            font-family: 'Arial', sans-serif;
+            position: relative;
+        }
+
+        .contact-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .contact-image {
+            background: url('contact1.jpg') center/cover no-repeat;
+            min-height: 400px;
+            border-radius: 20px 0 0 20px;
+        }
+
+        .contact-form {
+            padding: 40px;
+        }
+
+        .contact-form h2 {
+            color: #333;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .form-control {
+            background: #F8F8F8;
+            border: none;
+            padding: 12px;
+            border-radius: 10px;
+            font-size: 1rem;
+        }
+
+        .form-control:focus {
+            box-shadow: none;
+            border: 2px solid #F28500;
+        }
+
+        .btn-custom {
+            background-color: #F28500;
+            color: white;
+            padding: 12px;
+            font-size: 1.2rem;
+            width: 100%;
+            border: none;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .btn-custom:hover {
+            background-color: #F28500;
+        }
+
+        /* Arrow Icons */
+        .arrow-icon {
+            position: absolute;
+            top: 20px;
+            font-size: 24px;
+            color: #333;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+
+        .arrow-icon:hover {
+            color: #F28500;
+        }
+
+        .arrow-left {
+            left: 20px;
+        }
+
+        .arrow-right {
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Left Arrow -->
+    <a href="about.html" class="arrow-icon arrow-left">
+        <i class="fas fa-arrow-left"></i>
+    </a>
+
+    <!-- Right Arrow -->
+    <a href="form_valid1.html" class="arrow-icon arrow-right">
+        <i class="fas fa-arrow-right"></i>
+    </a>
+
+    <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+        <div class="row g-0 contact-card w-100" style="max-width: 900px;">
+            <div class="col-md-6 d-none d-md-block contact-image"></div>
+            <div class="col-md-6 col-12">
+                <div class="contact-form">
+                    <h2>Contact Us</h2>
+                   <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="E-Mail">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Phone Number"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-custom">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
